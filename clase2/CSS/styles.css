@@ -1,0 +1,29 @@
+body {
+    background-color: pink;
+}
+
+/*las comas permiten utilizar las reglas de CSS en varios selectores */
+p,
+h1, 
+span{
+    color:rgb(243, 81, 108);
+    text-decoration: underline;
+}
+
+section {
+    border: 1px solid blue;
+    background-color: aqua;
+}
+
+/*referenciar en base al selector de clase*/
+.noSubrayado{
+    text-decoration:none;
+}
+
+.textoRojo{
+    color: red;
+}
+
+#spanSection{
+    text-decoration:line-trough;
+}
