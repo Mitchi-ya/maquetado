@@ -1,0 +1,31 @@
+
+body{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+.card {
+    width: 250px;
+}
+
+.body{
+    background-color: gray;
+}
+
+.card-title-text{
+    color: white;
+    text-align: center;
+}
+
+.card-content{
+    font-style: italic;
+}
+
+.footer{
+    color: lightgray;
+    color: black;
+    text-align: center;
+}

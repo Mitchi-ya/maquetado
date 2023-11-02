@@ -15,15 +15,36 @@ section {
     background-color: aqua;
 }
 
+/*Reglas de prioridad
+1. orden de las clases
+2. tipo de selector prioridad de menor a mayor
+    1) selector de etiqueta
+    2) selector de clase
+    3) selector de id
+los selectores de CLASE e ID, ganan en prioridad independientemente del lugar en donde se hayan declarado, en cambio los SELECTORES DE ETIQUETA son sobreescritos sin más abajo en el código se vuelve a crear una regla para la misma ETIQUETA*/
+
 /*referenciar en base al selector de clase*/
+
+/*si pasara este etiqueta a la parte de arriba, aún así se le haría caso a esta clase*/
 .noSubrayado{
     text-decoration:none;
 }
 
-.textoRojo{
+/*.textoRojo{
     color: red;
+} */
+
+/*referenciar en base al selector id*/
+#spanSection{
+    text-decoration: line-through;
 }
 
-#spanSection{
-    text-decoration:line-trough;
+/*se le da más prioridad a las reglas que se encuentrán hasta el final, por eso los títulos son rojos, en lugar de rbg
+p{
+    color: red;
+}*/
+
+.anchoFijo{
+    width: 20px;
 }
+

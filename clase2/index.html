@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-       <!--<style>
+  <head>
+    <meta charset="UTF-8" />
+    <!--<style>
+        estilos internos.- para usar estos, se utiliza la ETIQUETA <style> en el <head> y dentro de ella van las reglas
+            <style>
         section {
             border:1px solid red; 
-            <!--el tamaño del borde, color y estilo de borde que puede mostrar-->
+            el tamaño del borde, color y estilo de borde que puede mostrar-->
+    <!--}-->
 
-
-        <!--}-->
-
-        <!--span {
+    <!--span {
             color:green;
         }
+
        </style>-->
+    <!-- hoja de estilos externa, se utiliza la etiqueta <link/> se usa el atributo rel="stylesheet" para indicar que estamos cargando un archivo CSS
+    el atributo href es para decit en donde se encuentra el archivo-->
+    <!--link es para mandar llamar nustra hoja de estilos-->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Intro CSS</title>
+  </head>
+  <body>
+    <!--estilos inline, tien prioridad sobre los demas estilos-->
+    <!--<p style="color: blue; font-size:20px">Parrafo</p>-->
 
-       <!--link es para mandar llamar nustra hoja de estilos-->
-       <link rel="stylesheet" href="./CSS/styles.css"/>
-        <title>Intro CSS</title>
+    <h1>Main titulo</h1>
+    <p>Parrafo con estilos de css externo</p>
 
-    </head>
-    <body>
-        <!--estilos inline-->
-        <!--<p style="color: blue; font-size:20px">Parrafo</p>-->
+    <p class="noSubrayado">Este parrafo no deberia estar subrayado</p>
 
-        <h1>Main titulo</h1>
-        <p>Parrafo con estilos de css externo </p>
-        
-        <p class="noSubrayado">Este parrafo no deberia estar subrayado</p>
+    <!--estilos internos-->
+    <section>
+      <!-- IMPORTANTE 
+            los IDS no deben repetirse y deben tener nombres muy explicitos-->
+      <span id="spanSection">Span dentro de una section</span>
 
-
-        <!--estilos internos-->
-        <section>
-            <span id="spanSection">Span dentro de una section</span>
-
-            <!--<p class ="noSubrayado textoRojo">Parrafo con selector de 
+      <!--<p class ="noSubrayado textoRojo">Parrafo con selector de 
             clase</p>-->
 
-            <!--<p class ="noSubrayado textoRojo" id="Spansection"></p> esto esta mal-->
+      <!--<p class ="noSubrayado textoRojo" id="Spansection"></p> esto esta mal-->
 
-            <!--<span>Span dentro de una section</span>-->
-        </section>
-    </body>
+      <!--<span>Span dentro de una section</span>-->
+    </section>
+    <section>
+      <!--<p>Parrafo con selector de clase</p>-->
+      <!--<p class="noSubrayado textoRojo">Parrafo con selector de clase</p>-->
+    </section>
+    <section class="anchoFijo">
+      <!--delimitar el tamaño de una sección-->
+      <p class="noSubrayado textoRojo">Parrafo con selector de clase</p>
+    </section>
+  </body>
 </html>
