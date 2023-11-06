@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/stylesdic.css" />
+    <title>HTML Tags</title>
+  </head>
+  <body>
+    <!-- seccion de enlaces -->
+    <section class="enlaces">
+      <ul>
+        <li class="enlaceListaItem">
+          <a href="#comentarios" class="link">#1.Tag;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#DOCTYPE" class="link">#2.DOCTYPE;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#a" class="link">#3.a;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#abbr" class="link">#4.abbr;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#address" class="link">#5.address;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#article" class="link">#6.article;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#aside" class="link">#7.aside;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#b" class="link">#8.b;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#base" class="link">#9.base;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#bdi" class="link">#10.bdi;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#bdo" class="link">#11.bdo;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#blockquote" class="link">#12.blockquote;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#body" class="link">#13.body;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#canvas" class="link">#14.canvas;</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#encabezados" class="link">#15.Encabezados</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#parrafos" class="link">#16.Parrafos</a>
+        </li>
+      </ul>
+    </section>
+    <main class="docsContainer">
+      <!-- Tag -->
+      <section id="comentarios" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;Tag&gt;</h3>
+          <p class="docItemDescription">
+            La etiqueta de comentario se utiliza para insertar comentarios en el
+            código fuente, estos <mark>no</mark> se muestran en los navegadores,
+            solo en consola.
+          </p>
+          <p>Ejemplo</p>
+          <img class="docEjemplo" src="/images/Etiqueta tag.PNG" />
+        </article>
+      </section>
+      <hr />
+
+      <!--<!DOCTYPE>-->
+      <section id="DOCTYPE" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;!DOCTYPE&gt;</h3>
+          <p class="docItemDescription">
+            Todos los documentos HTML deben comenzar con la declaración
+            <mark>&lt;!DOCTYPE&gt;</mark>. Esta no es una etiqueta HTML, sino es
+            una "información" para el navegador sobre que tipo de documento
+            esperar.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;!DOCTYPE html1&gt;</code>
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<a>-->
+      <section id="a" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;a&gt;</h3>
+          <p class="docItemDescription">
+            Define un hipervínculo que se utiliza para vincular una página a
+            otra. Su argumento más importante es
+            <mark>&lt;href&gt;</mark> que indica el destino del enlace.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;a href = "https//www.w3schools.com"&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<abbr>-->
+      <section id="abbr" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;abbr&gt;</h3>
+          <p class="docItemDescription">
+            Define una abreviatura o un acrónimo como
+            <mark>HTML, CSS, Mr.,Dr.,ASAP,ATM</mark>.
+          </p>
+          <p>
+            <b>Consejo: </b>utilice el atributo global para mostrar la
+            descripción de abreviatura cuando pase el mouse sobre el elemento
+            <mark>title</mark>.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">
+              &lt;abbr tittle="Three Letter Acronym"&gt;TLA&lt;/abbr&gt;acrónimo
+              de tres letras</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<address>-->
+      <section id="address" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;address&gt;</h3>
+          <p class="docItemDescription">
+            Define la información de contacto del autor/propietario de un
+            documento o artículo. Puede ser una dirección de correo, URL,
+            dirección física, n° de teléfono, identificador de RRSS, etc.
+            Generalmente se muestra en <i>cursiva</i>.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;address"&gt; Written by &lt;a
+              href="mailito@example.com&gt;JC&lt;/a&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<article>-->
+      <section id="article" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;article&gt;</h3>
+          <p class="docItemDescription">
+            Especifica contenido independiente y autónomo. Debe tener sentido
+            por sí solo y debe ser posible distribuirlo independientemente del
+            resto del sitio.
+          </p>
+          <ul type="circle">
+            Publicación en el foro
+          </ul>
+          <ul type="circle">
+            Entrada en un blog
+          </ul>
+          <ul type="circle">
+            Noticia
+          </ul>
+          <p>
+            <b>Nota: </b> el <mark>&lt;article&gt;</mark> no se muestra como
+            nada especial en el navegador.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;article&gt;
+              <pre></pre>
+              &lt;h2&gt;Google Chrome&lt;/h2&gt;&lt;p&gt; Google Chrome es un
+              buscador desarrollado por Google, liberado en 2008.&lt;/p&gt;
+              <pre></pre>
+              &lt;/article&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<aside>-->
+      <section id="aside" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;aside&gt;</h3>
+          <p class="docItemDescription">
+            Define un contenido aparte del que se coloca, debe estar
+            indirectamente relacionado con el contenido circundante
+          </p>
+          <p>
+            <b>Consejo: </b><mark>&lt;aside&gt;</mark> suele colocarse como una
+            barra lateral en un documento.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;aside&gt;
+              <pre></pre>
+              &lt;h4&gt;Epcot Center&lt;/h4&gt; Epcot es un parque temático de
+              Walt Disney Resort.&lt;/p&gt;
+              <pre></pre>
+              &lt;/aside&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<b>-->
+      <section id="b" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;b&gt;</h3>
+          <p class="docItemDescription">Pone un texto en negrita</p>
+          <p>
+            <b>Consejo: </b>también puedes utilizar CSS para establecer texto en
+            negrita con "font-weight:negrita".
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">
+              &lt;p&gt;Este es un texto normal -&lt;b&gt; y este es un texto
+              resaltado&lt;/b&gt;&lt;/p&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<base>-->
+      <section id="base" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;base&gt;</h3>
+          <p class="docItemDescription">
+            Especifica la URL base y/o el destino de todas las URL alternativas
+            de un documento. Debe estar dentro del elemento
+            <mark>&lt;head&gt;</mark>
+          </p>
+          <p>
+            <b>Nota: </b>debe tener presente un atributo<mark
+              >href o target</mark
+            >
+            o ambos.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;head&gt;
+              <pre></pre>
+              &lt;base href="https://www.w3schools.com" target="_blank"&gt;
+              <pre></pre>
+              &lt;/head&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<bdi>-->
+      <section id="bdi" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;bdi&gt;</h3>
+          <p class="docItemDescription">
+            BDI significa aislamiento bidireccional. La etiqueta aísla una parte
+            del texto que podría tener formato en una dirección diferente del
+            resto del texto externo. Es útil para poner contenido generado por
+            el usuario con una dirección de texto desconocida.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;ul&gt;
+              <pre></pre>
+              &lt;li&gt;User&lt;bdi&gt;hrefs&lt;/bdi&gt;:60 puntos&lt;/li&gt;
+              <pre></pre>
+              &lt;/ul&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<bdo>-->
+      <section id="bdo" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;bdo&gt;</h3>
+          <p class="docItemDescription">
+            BDO significa Anulación bidireccional. Se utiliza para anular la
+            dirección del texto actual
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;bdo dir="rlt"&gt; Este texto irá de derecha a
+              izquierda.&lt;/bdo&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<blockquote>-->
+      <section id="blockquote" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;blockquote&gt;</h3>
+          <p class="docItemDescription">
+            Especifica una sección citada de otra fuente. Los navegadores suelen
+            aplicar sangría a <mark>&lt;blockquote&gt;</mark>.
+          </p>
+          <p>
+            <b>Consejo: </b>utilícelo con <mark>&lt;q&gt;</mark> para citas en
+            línea breves.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;blockquote
+              cite="http://www.worldwildlife.org/who/index.html"&gt; Durate 60
+              años, WWF ha trabajado para ayudar a las personas y la naturaleza
+              a prosperar. &lt;/blockquote&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<body>-->
+      <section id="body" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;body&gt;</h3>
+          <p class="docItemDescription">
+            Define el cuerpo del documento. Contiene todo el contenido de un
+            documento HTML, como
+            <mark
+              >encabezados, párrafos, imágenes, hipervínculos, tablas,
+              listas</mark
+            >,etc.
+          </p>
+          <p>
+            <b>Nota: </b>sólo puede haver un <mark>&lt;body&gt;</mark> en un
+            documento.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;body&gt;
+              <pre></pre>
+              &lt;h1&gt;This is heading&lt;/h1&gt; &lt;p&gt;This is a
+              paragraph&lt;/p&gt;
+              <pre></pre>
+              &lt;/body&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--<canvas>-->
+      <section id="canvas" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">&lt;canvas&gt;</h3>
+          <p class="docItemDescription">
+            Se utiliza para dibujar grágicos sobre la marcha, mediante
+            secuencias de comandos.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"
+              >&lt;canvas id="myCanvas"&gt;
+              <pre></pre>
+              Tu buscador no soporta el tag de canvas
+              <pre></pre>
+              &lt;/canvas&gt;</code
+            >
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--Encabezados-->
+      <section id="encabezados" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">encabezados &lt;h1&gt; - &lt;h6&gt;</h3>
+          <p class="docItemDescription">
+            Las etiquetas &lt;h1&gt; - &lt;h6&gt; se utilizan para definir
+            encabezados HTML. <br />
+            <b> &lt;h1&gt; </b> Define el título más importante.
+            <br />
+            <b> &lt;h6&gt; </b>Define el encabezado menos importante. <br />
+          </p>
+
+          <p>
+            <b>Nota: </b>Utilice solo un <mark>&lt;h1&gt;</mark> por página;
+            éste debe representar el título/asunto principal de toda la
+            página.Comience siempre en orden.
+          </p>
+          <p>Ejemplo</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;h1&gt; encabezado &lt;/h1&gt;</code>
+          </div>
+        </article>
+      </section>
+      <hr />
+
+      <!--p-->
+      <section id="parrafos" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">parrafos &lt;p&gt;</h3>
+          <p class="docItemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt
+            cupiditate quod exercitationem explicabo? Quibusdam eum odio
+            voluptates praesentium aperiam temporibus aspernatur doloremque
+            dicta molestiae vel omnis, excepturi quas in!
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;p&gt; parrafo &lt;/p&gt;</code>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!---->
+    <button onclick="location.href='Diccionario.html'">Regresar</button>
+  </body>
+</html>
