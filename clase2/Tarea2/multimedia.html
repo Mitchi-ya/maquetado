@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Tarea 2. Creción de un diccionario como W3 schools-->
+<html lang="es">
+  <!--head: es un contenedor de metadatos. Los metadatos suelen definir el título del documento, caracteres, estilos, scripts, etc.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Diccionario" content="contenido" />
+    <meta author="autor" content="Mitchel" />
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="./CSS/stylesdic.css" />
+  </head>
+  <body>
+    <img src="./images/unnamed.png" />
+
+    <h1>
+      <b>'Multimedia'</b>
+    </h1>
+    <h2>Etiqueta 'video'</h2>
+    <h3>Definición y uso</h3>
+    <p>
+      Se utiliza para incrustar contenido de video en un documento, como un clip
+      de película u otras secuencias de video. Hay tres formas de video
+      compatibles: '<mark>WebM</mark>', '<mark>MP4</mark>' y '<mark>OGG</mark>'.
+    </p>
+
+    <video width="320" height="240" controls>
+      <source src="images/videoperro.mp4" type="video/mp4" />
+    </video>
+    <footer>
+      <p>
+        Author: un autor de tiktok<br />
+        <a href="mailto:unusuario@example.com">unusuario@example.com</a>
+      </p>
+    </footer>
+    <!---->
+    <hr />
+    <h2>Etiqueta 'audio'</h2>
+    <h3>Definición y uso</h3>
+
+    <p>
+      Se utiliza para agregar contenido de sonido en un documento; puede ser
+      música u otras transmisiones de adio. Esta etiqueta contiene una o más
+      etiquetas'<mark>source</mark>' con diferentes fuentes de audio.
+    </p>
+
+    <p><em>Da click en play</em></p>
+    <audio controls>
+      <source src="images/Audioexample.mpeg" type="audio/mpeg" />
+      Your browser doesn't support the audio element.
+    </audio>
+    <!--<pre>: sirve para dar espacio  simple -->
+    <pre></pre>
+
+    <!---->
+    <label for="file">Dowloading progress:</label>
+    <progress id="file" value="32" max="100">32%</progress>
+    <pre></pre>
+    <hr />
+    <!--Time-->
+    <h2>Etiqueta 'time'</h2>
+    <h3>Definición y uso</h3>
+
+    <p>
+      Define una hora específica'<mark>hora</mark>' y '<mark>fecha</mark>'. El
+      '<b><mark>datatime</mark></b
+      >' se utiliza para traducir la hora a un formato legible para que los
+      navegadores puedan ofrecer "agregar recordatorios" y los resultados de
+      búsqueda puedan producir resultados más inteligentes.
+    </p>
+
+    <p>
+      <b
+        >Recuérdame enviar mi tarea desde las <time>15:00</time> hasta las
+        <time>18:00</time> cada semana.</b
+      >
+    </p>
+
+    <!---->
+    <hr />
+    <h2>Etiqueta 'template'</h2>
+    <h3>Definición y uso</h3>
+    <p>
+      Se utiliza como contenedor para mantener contenido HTML oculto cuando se
+      carga la página. Si tiene algún código que desea usar continuamente, pero
+      no hasta que lo solicite.
+    </p>
+
+    <p>Haga clic en el botón para mostrar el contenido oculto del elemento.</p>
+    <div class="botonFlor">
+      <button onclick="showContent()">Muestra la información oculta</button>
+    </div>
+    <template
+      ><h2>Flower</h2>
+      <img src="images/girasol.jpg" width="214" height="204" />
+    </template>
+    <script>
+      function showContent() {
+        let temp = document.getElementsByTagName("template")[0];
+        let clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+    </script>
+
+    <!---->
+    <button onclick="location.href='Diccionario.html'">Regresar</button>
+  </body>
+</html>

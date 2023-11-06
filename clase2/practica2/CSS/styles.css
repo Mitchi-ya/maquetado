@@ -1,0 +1,18 @@
+address{
+    display: block;
+    font-family: cursive;
+} 
+
+h2{
+    text-decoration-color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+dfn{
+    font-size: smaller;
+}
+
+.dfn{
+    font-size: smaller;
+    font-family: cursive;
+}

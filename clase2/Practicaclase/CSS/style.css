@@ -1,31 +1,24 @@
 
-body{
+body {
+    background-color: white;
     text-align: center;
-}
-
-div{
-    text-align: center;
-}
-
-.card {
     width: 250px;
+    padding-left: 250px;
 }
 
-.body{
-    background-color: gray;
-}
-
-.card-title-text{
+h1 {
     color: white;
+    background-color: rgb(77, 73, 73);
     text-align: center;
 }
 
-.card-content{
+.cardContent{
     font-style: italic;
+    text-align: center;
+    text-align: justify;
 }
 
 .footer{
-    color: lightgray;
-    color: black;
+    background-color: rgb(243, 225, 228);
     text-align: center;
 }

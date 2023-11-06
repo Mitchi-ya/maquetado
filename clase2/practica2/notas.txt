@@ -1,0 +1,200 @@
+<!-- 
+***************************************
+Para mostar el codigo de la etiqueta en la clase .codeExample
+(el cuadrito negro con texto verde)
+se reemplaza el caracter '<' por '&lt;'  y el caracter '>' por &gt;
+ejemplo: 
+   para mostrar <h1> texto </h1>  se haria:
+   &lt;h1&gt; encabezado &lt;/h1&gt;
+    se reemplazan los caracters < y > por los espaciales de arriba 
+    y se pone el nombre de la etiqueta
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <!-- seccion de enlaces -->
+    <section class="enlaces">
+      <ul>
+        <li class="enlaceListaItem">
+          <a href="#encabezados" class="link">#1.Encabezados</a>
+        </li>
+        <li class="enlaceListaItem">
+          <a href="#parrafos" class="link">#2.Parrafos</a>
+        </li>
+      </ul>
+    </section>
+    <main class="docsContainer">
+      <!-- primer bloque de contenido -->
+      <section id="encabezados" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Encabezados (h1 - h6)</h3>
+          <p class="docItemDescription">
+            Las etiquetas &lt;h1&gt; to &lt;h6&gt; se utilizan para definir
+            encabezados HTML. <br />
+            <b> &lt;h1&gt; </b> Define el título más importante.
+            <br />
+            <b> &lt;h6&gt; </b>Define el encabezado menos importante.
+            <br />Nota: Utilice solo uno &lt;h1&gt; por página; este debe
+            representar el título/asunto principal de toda la página. Además, no
+            se salte los niveles de encabezado: comience con &lt;h1&gt;, luego
+            use &lt;h2&gt;, y así sucesivamente.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;h1&gt; encabezado &lt;/h1&gt;</code>
+          </div>
+        </article>
+      </section>
+      <!-- aqui termina el primer bloque -->
+
+      <!-- segundo bloque de contenido -->
+      <section id="parrafos" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Parrafos (p)</h3>
+          <p class="docItemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt
+            cupiditate quod exercitationem explicabo? Quibusdam eum odio
+            voluptates praesentium aperiam temporibus aspernatur doloremque
+            dicta molestiae vel omnis, excepturi quas in!
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;p&gt; parrafo &lt;/p&gt;</code>
+          </div>
+        </article>
+      </section>
+      <!-- aqui termina el segundo bloque -->
+    </main>
+  </body>
+</html>
+
+<!--<!DOCTYPE html>
+<!--Practica 1. SPOTIFY Terminos y condiciones-->
+<!--<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Terminos y condiciones" content="contenido">
+        <meta author="autor" content="Mitchel">
+        <title>Spotify</title>
+    </head>
+    <body>
+        <h1><b>Terminos y condiciones del uso de Spotify</b></h1>
+        <a hbref="#Introduccion">1.Introducción</a>
+        <br />
+        <a hbref="#">2.El Servicio de Spotify que proporcionamos</a>
+        <br />
+        <a hbref="#">3.Uso del Servicio de Spotify</a>
+        <br />
+        <a hbref="#">4.Contenido y derechos de propiedad intelectual</a>
+        <br />
+        <a hbref="#">5.Asistencia al cliente, información, preguntas y reclamaciones</a>
+        <br />
+        <a hbref="#">6.Problemas y controversias</a>
+        <br />
+        <a hbref="#">7.Acerca de los presentes Términos y Condiciones</a>
+        <br />
+        <h2><b>1.Introducción</b></h2>
+        <p>Lea detenidamente los presentes Términos y Condiciones de uso ue rigen el uso que usted haga de los servicios personalizados de Spotify para la transmisión de música y otros contenidos.</p>
+        <h2><b>Proveedor del servicio</b></h2>
+        <p>Los presentes Términos se establecen entre usted y Spotify AB, Regeringsgatan 19, 111 53, Estocolmo, Suecia.</p>
+        <h2><b>Requisitos de edad y elegibilidad</b></h2>
+        <p>Para poder utilizar el Servicio de Spotify y acceder a cualquier Contenido, deberá (1) tener 13 años de edad (o la edad mínima equivalente en su país de origen) o más, (2) contar con el consentimiento de sus padres o de su tutor legal si es menor de edad en su país de origen;</p>
+        <h2><b>2.El Servicio de Spotify que proporcionamos</b></h1>
+        <h2><b>Opciones del Servicio de Spotify</b></h2>
+        <p>Ofrecemos numerosas opciones de Servicio de Spotify. Algunas opciones del Servicio de Spotify se ofrecen de forma gratuita, mientras que otras opciones requieren un pago para poder acceder a las mismas .</p>
+        <h3><b>Pruebas</b></h3>
+        <p>Ocasionalmente, nosotros, o terceros en nuestro nombre, podremos ofrecer pruebas de Suscripciones de pago durante un periodo determinado sin pago o con una tarifa reducida <u>Términos de la oferta promocional de Spotify Premium.</u></p>
+    </body>
+</html> -->
+
+
+
+
+
+/* el selector universal afecta todas las etiquetas
+  aqui se le esta quitando el espaciado por defecto
+  que tienen las etiquetas
+  margin: es el espacio externo de las etiquetas, permite separar una etiqueta de otra
+  padding: es el espacio interno de las etiquetas
+ */
+ * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*  
+    .enlaces es la clase que tiene el contenedor gris de los enlaces
+    background-color: define el color gris de fondo, se estan usando
+    colores en hexadecimal
+    padding: espacio interno de la etiqueta, da un espacio dentro del area gris
+    border-radius: redondea los bordes, en el area gris, las esquinas esta redondeaddas
+    width: Define el anchode la seccion
+    margin-top: espacio exterior del area gris hacia arriba;
+    margin-bottom: espacio exterior del area gris hacia abajo;
+    margin-left: espacio exterior del area gris hacia la izquierda;
+    margin-right: espacio exterior del area gris hacia derecha;
+    nota: usar margin con valor en 'auto' centra los elementos que tengan un width definido
+    
+  */
+  .enlaces {
+    background-color: #d1d1d1;
+    padding: 8px;
+    border-radius: 8px;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* list-style: none, quita el puntito de la izquiera de los elementos de las listas */
+  .enlaceListaItem {
+    list-style: none;
+    padding: 4px;
+  }
+  
+  /* ponemos un color negro para los enlaces */
+  .link {
+    color: #272727;
+  }
+  
+  .docsContainer {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bloqueDocumentacion {
+    margin-top: 8px;
+  }
+  
+  .docItem {
+    background-color: #d3d3d3;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+  }
+  
+  .docItemTitle,
+  .docItemDescription,
+  .codeExampleContainer {
+    margin: 8px;
+  }
+  
+  .codeExample {
+    background-color: #000;
+    height: 25px;
+    color: #72ff72;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px;
+  }
+
+
+
+  <form action="/spotify.html" method="get"> <label for="menu">Elige un elemento: </label><input list="menus" name="menu" id="menus"><datalist id="menus"><option value="1.Introducción"><option value="2.El Servicio de Spotify que proporcionamos"></option> </datalist> <input type="submit"></form>

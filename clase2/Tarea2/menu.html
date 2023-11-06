@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--Tarea 2. Creción de un diccionario como W3 schools-->
+<html lang="es">
+  <!--head: es un contenedor de metadatos. Los metadatos suelen definir el título del documento, caracteres, estilos, scripts, etc.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Diccionario" content="contenido" />
+    <meta author="autor" content="Mitchel" />
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="./CSS/stylesdic.css" />
+  </head>
+  <body>
+    <img src="./images/unnamed.png" />
+
+    <!--menu-->
+    <h1>
+      <b>Etiqueta '<u>menu</u>'</b>
+    </h1>
+    <h3>Definición y uso</h3>
+    <p>
+      La etiqueta 'menu' define una lista desordenada de contenido. Se uso junto
+      con '<mark><b>li</b></mark
+      >' para crear elementos de menú y junto con '<mark><b>data</b></mark
+      >' que se utiliza para darle una traducción legible por máquina con un
+      contenido determinado.
+    </p>
+
+    <!--<div>: define una división o sección en un doc HTML. Se usa como contenedor de elementos.
+        <summary>:define un encabezado desplegable que se puede ver u ocultar y debe ser el primer elemento secundario para la etiqueta <detalles>
+        <s>:especifica texto que ya no es preciso,relevante o correcto, aparecerá tachado con una línea atravesada.-->
+    <menu>
+      <details>
+        <summary>Menú de postres</summary>
+        <li><data value="10312">Chocolates</data></li>
+        <li>Cheesecake</li>
+        <li>Fresas con crema</li>
+        <li><s>Helado</s></li>
+        <li>Pastel</li>
+        <li><data value="10313">Tartas</data></li>
+      </details>
+    </menu>
+
+    <p>
+      Se puede combinar con diferentes etiquetas. Por ejemplo '<b
+        >details, input, label</b
+      >'
+    </p>
+    <hr />
+    <!-- <details>-->
+    <h3>Details</h3>
+    <p>
+      Especifica una lista de opciones predefinidas para un elemento
+      <mark>'input'.</mark>
+    </p>
+
+    <!--<form>:se usa para crear un formulario HTML para la entrada del usuario
+        <label>:define una etiqueta para varios elementos; el atributo for de label debe ser igual al atributo id del elemento relacionado para unirlos-->
+    <form action="/submenu.html" method="get">
+      <label for="list">Elige tu postre de la lista:</label
+      ><input list="postre" id="postres" />
+      <datalist id="postres">
+        <option value="Chocolates"></option>
+        <option value="Cheesecakes"></option>
+        <option value="Fresas con crema"></option>
+        <option value="Helado"></option>
+        <option value="Pastel"></option>
+        <option value="Tartas"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+
+    <hr />
+    <!--<input>-->
+    <h3>Input</h3>
+    <p>
+      Especifica un campo de entrada donde el usuario puede ingresar datos.
+      <mark>Es el elemento más importante.</mark>
+    </p>
+
+    <h4><b>Tip:</b></h4>
+    <p>Utilice siempte con la etiqueta '<mark>label</mark>'</p>
+
+    <form action="/submenu.html" method="get">
+      <input type="checkbox" name="desserts" value="Cheesecake" />
+      <label for="desserts">Cheesecake</label><br />
+      <input type="checkbox" name="desserts1" value="Helado" />
+      <label for="desserts1">Helado</label><br />
+      <input type="checkbox" name="desserts2" value="Pastel" />
+      <label for="desserts2">Pastel</label><br />
+      <input type="checkbox" name="desserts3" value="Tartas" />
+      <label for="desserts3">Tartas</label><br />
+    </form>
+
+    <hr />
+    <!---->
+    <h3>Optgroup</h3>
+    <p>
+      Se utiliza para agrupar opciones relacionadas en un
+      elemento'<mark>select.</mark>'(lista desplegable) Si tiene una lista
+      larga, las opciones realcionadas son más fáciles de manejar.
+    </p>
+    <form action="/submenu.html">
+      <label for="dessert">Elige tu postre:</label
+      ><select name="dessert" id="postres">
+        <!--<select>:elemento que se utiliza para crear una lista desplegable.
+        <name>:necesario para hacer referencia a los datos del formulario después de enviarlo-->
+        <optgroup label="Postres hechos con harina">
+          <!--<option>:define una opción en una lista de selección, se puede usar sin nungún atributo, pero generarlente necesita algun valor, puede ser: <select>, <optgroup> o <datalist>.-->
+          <option value="Cheesecake">Cheesecake</option>
+          <option value="Pastel">Pastel</option>
+          <option value="Tarta">Tartas</option>
+        </optgroup>
+        <optgroup label="Postres fríos">
+          <option value="Chocolates">Chocolates</option>
+          <option value="Fresas">Fresas con crema</option>
+          <option value="Helado">Helado</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <!---->
+    <button onclick="location.href='Diccionario.html'">Regresar</button>
+  </body>
+</html>

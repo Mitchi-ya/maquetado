@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--Tarea 2. Creción de un diccionario como W3 schools-->
+<html lang="es">
+  <!--head: es un contenedor de metadatos. Los metadatos suelen definir el título del documento, caracteres, estilos, scripts, etc.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Diccionario" content="contenido" />
+    <meta author="autor" content="Mitchel" />
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="./CSS/stylesdic.css" />
+  </head>
+  <body>
+    <img src="./images/unnamed.png" />
+
+    <h1>
+      <b>Etiqueta '<u>img</u>'</b>
+    </h1>
+    <h3>Definición y uso</h3>
+    <p>
+      La etiqueta 'img' se utiliza para colocar una imágen en una página HTML.
+      Las imágenes <mark>NO</mark> se insertan en una página web; sino que están
+      vinculadas a páginas web. La etiqueta'img' crea un espacio de tetenció
+      para la imagen a la que se hace referencia.
+    </p>
+
+    <h4><b>Tip:</b></h4>
+    <!--mark.- sirve para resaltar una palabra o texto. Se puede utilizar dentro de la etiqueta <p> para definir solo una palabra, como es el caso. Y cambiar sus valores dentro de CSS-->
+    <p>
+      Especifique siempre el <mark>ancho</mark> y <mark>alto</mark> de una
+      imagen, en caso de no hacerlo la página puede parpadear mientras carga.
+    </p>
+    <h4><p>Sus atributos obligatorios son:</p></h4>
+    <!--table:define una tabla en HTML, consta de un <table> y uno o más elementos <tr>: define la fila de la tabla,<th>: define el encabezado de la tabla y <td>: define la celda de la tabla.
+      Puede incluir elemenos <caption>,<colorgroup>,<thead>,<tfoot> y   <tbody> -->
+    <table>
+      <tr>
+        <th>Atribute</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><em>src</em></td>
+        <td>Especifica la ruta de la imagen.</td>
+      </tr>
+      <tr>
+        <!--em: sirve para poner en cursiva el texto-->
+        <td><em>alt</em></td>
+        <td>
+          Especifica un texto alternativo para la imagen, si esta por algún
+          motivo no se puede mostrar.
+        </td>
+      </tr>
+    </table>
+
+    <h3>Ejemplo</h3>
+
+    <!--div: define una división o sección en un doc HTML. Se usa como contenedor de elementos.-->
+    <div class="cuadrodetexto"></div>
+    <!--<span>:es un contenedor en línea que se utiliza para marcar una parte de un texto  o documento-->
+    <span class="cuadroEjemplo"
+      ><span class="tagnamecolor" style="color: green">
+        <span class="tagcolor" style="color: mediumblue"><</span>img
+        <span class="attributecolor" style="color: red"
+          >src<span class="attibutevaluecolor" style="color: mediumblue"
+            >="img.jpg"</span
+          ></span
+        >
+        <span class="tagcolor" style="color: red">alt</span></span
+      >
+      <span class="tagnamecolor" style="color: green">
+        <span class="tagcolor" style="color: mediumblue">="</span>Descripicón de
+        imagen
+        <span class="tagcolor" style="color: mediumblue">"</span>
+      </span>
+    </span>
+
+    <!--figure: especifica contenido como ilustraciones, diagramas, fotos, etc.
+    -figurecaption: se utiliza para agregar un título al elemento <figure>-->
+    <figure>
+      <img
+        class="ejemplo"
+        src="./images/Capturaarea.PNG"
+        alt="ejemplo de como usar Tag <area>"
+      /><fgcaption>Fig1. - logo w3school.</fgcaption>
+    </figure>
+
+    <!--<hr>:Define una ruptura temática en una página HTML, suele mostrarse como una regla horizontal utilizada para separar contenido.-->
+    <hr />
+    <p>Se puede combinar con diferentes etiquetas.</p>
+    <h4>Por ejemplo '<b>area</b>'</h4>
+
+    <p>
+      <!--<mark>:resalta o marca el texto-->
+      En la etiqueta 'imagen' puede usarse la etiqueta <mark>'area'</mark>, esta
+      define el área dentro de un mapa de imagen, (donde se puede hacer clic).
+      Los elementos siempre están animados dentro de una etiqueta
+      <mark>'map'</mark> usando la estructura del ejemplo anterior. Se puede
+      usar con una imagen con varios elementos.
+    </p>
+
+    <p>Más información da clic en la imagen:</p>
+    <img
+      src="./images/1623835269343_0.jpg"
+      alt="example"
+      usemap="#workmap"
+      width="100"
+      height="99"
+    />
+    <!--<map>: se utiliza para definir un mapa de imágenes. (un mapa de imágenes es una imagen con áreas en lasque se puede hacer clic).
+    coords:especifica las coordinadas del área-->
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="example"
+        href="https://www.w3schools.com/tags/tag_img.asp"
+      />
+    </map>
+
+    <!---->
+    <button onclick="location.href='Diccionario.html'">Regresar</button>
+  </body>
+</html>

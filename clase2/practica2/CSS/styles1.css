@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: beige;
+    font-family: 'calabri';
+}
+
+img{
+    width: 120px;
+}
+
+header{
+    background: rgb(15, 56, 15);
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 11px 0;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+button{
+    border:none;
+    color: green;
+    padding: 15px 32px;
+    text-align: 50px;
+    font-size: medium;
+}
+

@@ -1,0 +1,93 @@
+img{
+    top: 20px;
+    width: 80px;
+    display:block;
+    margin: 10px auto;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.onclick{
+    border-bottom: black;
+    margin: black;
+    color: rgb(24, 94, 65);
+    padding-block-end: right-end;
+    margin: 4px 2px;
+}
+/*Button*/
+.colorRojo{
+    color: red;
+}
+
+.cuadroEjemplo{
+    border-color: black;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+button{
+    border-color: rgb(255, 0, 119);
+    top: 100px;
+    float: inline-end;
+}
+
+mark{
+    background-color: white;
+    color: brown;
+}
+
+table, th, td{
+    border-color: brown;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/*img*/
+.ejemplo{
+    width: 500px;
+    height: 400px;
+}
+
+figure{
+text-align: center;
+}
+
+/*font*/
+.samp{
+    text-align: center;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+/*menu*/
+summary{
+    color: goldenrod;
+}
+
+strong{
+    color:red;
+    text-align: center;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+.submenu{
+    text-align: center;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+s{
+text-decoration-style: wavy;
+text-decoration-color: red;
+}
+
+/*hiden button*/
+.botonFlor{
+    float: left;
+    height: 5px;
+}
+

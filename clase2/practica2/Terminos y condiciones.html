@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Practica 1. SPOTIFY Terminos y condiciones-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Terminos y condiciones" content="contenido" />
+    <meta author="autor" content="Mitchel" />
+    <title>spotify</title>
+    <link rel="stylesheet" href="./CSS/styles1.css" />
+  </head>
+  <body>
+    <!--button type: genera un botón de alerta-->
+    <header>
+      <!--div: define una división o una sección en un documento, se puede usar con class o id-->
+      <div class="menu">
+        <img
+          src="./images/Spotify-logo.png"
+          alt="workplace"
+          usemap="#workmap"
+          width="120"
+          height="50"
+          float="left"
+        />
+        <nav>
+          <ul>
+            <!--lista de enlace li-->
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./spotify.html">Terminos y condiciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <p>
+      Click en el logo o texto para dirigirte a la página términos y condiciones
+      <button type="button" onclick="alert('spotify terminos y condiciones')">
+        ¡Spotify!
+      </button>
+    </p>
+
+    <!--map: -->
+    <img href="./images/logo spotify.png" alt="logos" usemap="#workmap" />
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="logo"
+        href="./spotify.html"
+      />
+    </map>
+
+    <!--target:-->
+    <p>Mayor información:</p>
+    <a href="./spotify.html" target="_blank">Terminos y condiciones</a>
+  </body>
+</html>
