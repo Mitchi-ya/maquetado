@@ -1,8 +1,73 @@
-/*posicionFixed*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*las posiciones CSS, todo lo que creamos tiene cierto posicionamiento llamado static*/
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+}
+
+/*static: los elementos se quedan estáticos en la página y no más.
+propiedad de display y elemento inline.
+-display en bloque: (son secciones, listas van verticalmente) etiquetas contenedoras, seccion, div, listas, li. Se pone uno abajo del otro. abarcan el 100%*
+-elemento inline: (van horizontalmente) son elementos como los span, link, botones. Fijan los span uno a lado del otro. los elementos inline solamente abarcan lo que envía su contenido, puede estar en una misma línea*/
+
+
+/*position relative
+habilita las propiedades de dirección: top, left, bottom, right para mover el elemento desde el lado derecho se usan valores negativos como left:.20px o right:20px*/
+.relative{
+    position: relative;
+}
+
+.posicionRelativa{
+    position:relative;
+    /*left:20px;
+    top: 20px;*/
+}
+
+/*.moveRelative1{
+    left: 20px;
+    top: 120px;
+}*/
+
+.moverElementoRelativo{
+    left: 20px;
+    top: 120px;
+}
+
+/*position absolute
+los elementos se posicionan (de forma libre) en base al documento de la página (body),puede acomodarse en toda la pantalla. top, left, botton y right. Ej, si se pone top: 0; se va a pegar lo más posible a body. Esta se pone por encima de los demás y no respeta su posicionamiento original.
+ */
+.posicionAbsoluta{
+    position:absolute;
+}
+
+.moveAbsolute1{
+    margin:0;
+    top:20px;
+    left: 120px;
+}
+
+/*positionFixed*/
 .posicionFixed{
     position: fixed;
     top: 120px;
     right: 0;
+}
+
+/*Absoluto y relativo*/
+    
+.ejemploAbsolutoyRelativo{
+    margin-top: 160px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #333;
+    background-color: azure;
 }
 
 /*posicion sticky*/
