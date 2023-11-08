@@ -1,0 +1,54 @@
+.buttonHover{
+    background-color: transparent;
+    border: 1px solid blue;
+    width: 150px;
+    padding: 8px;
+    transition: all 300ms ease;
+    /*transition: background-color 1s ease-in-out, 1s ease-in-out; -- definimos tiempo y efecto*/
+    cursor:ponter;
+    /*100ms a 300 ms (milisegundos) es lo más recomendable*/
+}
+
+/*se cambia el background-color y el color de texto cuando el mouse pasa sobre el*/
+.buttonHover:hover{
+    background-color: blue;
+    color: white;
+    width: 250px;
+}
+
+/*.box{
+    transition: widht 500ms linear;}
+.box:Hover{
+    widht:700px;}/
+
+/*animación*/
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: #004466;
+    margin: 16px;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /*animation: nom de de la animación, duración y efecto*/
+    animation: mover-cuadro 5s linear infinite;
+}
+
+@keyframes mover-cuadro{
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateY(200px);
+        /*top: 200px;*/
+    }
+    66%{
+transform: translateX(200px) translateY(200px)
+    }
+    100%{
+        transform:translateX(200px)
+    }
+}

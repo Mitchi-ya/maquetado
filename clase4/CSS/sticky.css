@@ -1,0 +1,24 @@
+/*posicionFixed*/
+.posicionFixed{
+    position: fixed;
+    top: 120px;
+    right: 0;
+}
+
+/*posicion sticky*/
+.stickyContainer{
+    width: 400px;
+    border: 1px solid #333;
+}
+
+.posictionSticky{
+padding: 5px;
+background-color: red;
+border: 2px solid yellow;
+position: sticky;
+top: 0;
+}
+
+.stickyContent{
+    padding-bottom: 2000px;
+}

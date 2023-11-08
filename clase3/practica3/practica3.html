@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--Practica 1, clase 3. Selectores Avanzados-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/practica3.css" />
+    <title>Selectores Avanzados</title>
+  </head>
+
+  <body>
+    <section id="selectorHijo">
+      <h1><b>Terminos y condiciones del uso de Spotify</b></h1>
+      <div class="contenido">
+        <!--selector hijo porque <section> es hijo de body y su clase es contenido-->
+        <a href="#Introduccion">#1.Introduccion</a>
+        <br />
+        <a href="#">2.El Servicio de Spotify que proporcionamos</a>
+        <br />
+        <a href="#">3.Uso del Servicio de Spotify</a>
+        <br />
+        <a href="#">4.Contenido y derechos de propiedad intelectual</a>
+        <br />
+      </div>
+    </section>
+    <section id="selectorHermano">
+      <h2>
+        <b
+          >1.Introduccion
+          <!--selectorHermano, es otro <section> dentro de body, que lo convierte en hermano del primero--></b
+        >
+      </h2>
+      <p>
+        Lea detenidamente los presentes Términos y Condiciones de uso ue rigen
+        el uso que usted haga de los servicios personalizados de Spotify para la
+        transmisión de música y otros contenidos.
+      </p>
+      <h2><b>Proveedor del servicio</b></h2>
+      <p>
+        Los presentes Términos se establecen entre usted y Spotify AB,
+        Regeringsgatan 19, 111 53, Estocolmo, Suecia.
+      </p>
+      <div class="container">
+        <h2><b>Requisitos de edad y elegibilidad</b></h2>
+        <p>
+          Para poder utilizar el Servicio de Spotify y acceder a cualquier
+          Contenido, deberá (1) tener 13 años de edad (o la edad mínima
+          equivalente en su país de origen) o más, (2) contar con el
+          consentimiento de sus padres o de su tutor legal si es menor de edad
+          en su país de origen;
+        </p>
+      </div>
+    </section>
+
+    <section id="selectorHermanoGeneral">
+      <!--selector Hermano General-->
+      <h3><b>2.El Servicio de Spotify que proporcionamos</b></h3>
+      <h3><b>Opciones del Servicio de Spotify</b></h3>
+      <span>
+        Ofrecemos numerosas opciones de Servicio de Spotify. Algunas opciones
+        del Servicio de Spotify se ofrecen de forma gratuita, mientras que otras
+        opciones requieren un pago para poder acceder a las mismas .
+      </span>
+      <div class="contenedor">
+        <h3><b>Pruebas</b></h3>
+        <span>
+          Ocasionalmente, nosotros, o terceros en nuestro nombre, podremos
+          ofrecer pruebas de Suscripciones de pago durante un periodo
+          determinado sin pago o con una tarifa reducida
+          <u>Términos de la oferta promocional de Spotify Premium.</u>
+        </span>
+      </div>
+    </section>
+    <section id="selectorAtributo">
+      <!--selector atributo-->
+      <a href="www.google.com">Ver Google</a>
+      <a href="https://www.spotify.com/es/legal/end-user-agreement/"
+        ><button class="buttonHover">Hover/spotify</button></a
+      >
+    </section>
+
+    <section>
+      <p class="firstLetter">
+        Ofrecemos numerosas opciones de Servicio de Spotify.
+        <span>mas contenido</span>
+      </p>
+    </section>
+
+    <section>
+      <ul class="listaNumeros">
+      <li>
+        <p>1</p>
+      </li>
+      <li>
+        <p>2</p>
+      </li>
+      <li>
+        <p>3</p>
+      </li>
+      <li>
+        <p>4</p>
+      </li>
+      <li>
+        <p>5</p>
+      </li></section>
+
+      <section class="cajas">
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+      </section>
+      
+
+  </body>
+</html>

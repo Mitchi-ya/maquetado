@@ -1,0 +1,74 @@
+#selectorHijo{
+    border: 2px solid firebrick;
+    margin: 18px; /*espaciado externo de la "caja"*/
+    padding: 18px;  /*espaciado interno de la "caja"*/
+}
+
+#selectorHijo .contenido > a{
+    color: fuchsia;
+}
+
+#selectorHermano h2 + p{
+    background-color: rgb(228, 228, 122);
+    outline: rgb(9, 82, 9);
+}
+
+#selectorHermanoGeneral h3 ~ span{
+    background-color: lightcoral;
+}
+
+#selectorHermanoGeneral b{
+    color: purple;
+}
+
+.contenedor b{
+    color: blue;
+}
+
+a[href="www.google.com"]{
+    color: orangered;
+}
+
+a[href="https://www.spotify.com/es/legal/end-user-agreement/"]{
+    color: rgb(83, 136, 4);
+    margin: 10px 5px 100px 200px;
+}
+
+/*HOVER*/
+.buttonHover{
+    background-color: transparent;
+    border: 5px solid rgb(138, 81, 138);
+    padding: 10px;
+}
+
+.buttonHover:hover{
+    background-color: rgb(111, 111, 206);
+    color: white;
+}
+
+.firstLetter::first-letter{
+    color: rgb(32, 238, 32);
+    font-size: 30px;
+}
+
+.listaNumeros li:first-child,
+.listaNumeros li:last-child{
+    background-color: rgb(209, 98, 98);
+    color: brown;
+}
+
+.caja{
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    margin: 10px 0;
+}
+
+.cajas .caja:first-child{
+    width: 150px;
+    height: 150px;
+}
+
+.listaNumeros li:nth-child(3){
+    background-color: blueviolet;
+}
