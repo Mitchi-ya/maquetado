@@ -1,0 +1,50 @@
+/*estilos base son pantallas de 600px para abajo*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topNav {
+    background-color: #292d33;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    /*position: sticky; donde quiero que se ponga*/
+    position: fixed; /*si utilizamos el fijo hay que decirle como debe ponerse*/
+    width: 100%;  /*para tomar el ancho de la pantalla en cualquier tamaño en la que este*/
+    top: 0;
+}
+
+.container{
+    width: 90%;  /*% de su elemento padre, body*/
+    /*border: 1px solid;
+    /*para centrar texto pregunta examen jaja*/
+    /*debe ser menor a su papá*/
+    /*centramos usando margenes laterales*/
+    margin: 0 auto; /*1°representa arriba-abajo; 2°representa izq y der Y es automático*/
+}
+
+/*el conteido se puede hacer de 2 formas piniendo márgenes o darle formato al texto */
+
+.mainContainer{
+    margin-top: 45px; /*puede ser solo esta*/
+    padding: 10px;
+    /*position: relative;
+    top: 55px; o estas 2 juntas*/
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.contenedorImagen{
+    outline: solid red;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.imagenArticle{
+    width: 100%;
+/*    margin: 0 auto;*/
+}

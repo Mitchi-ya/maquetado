@@ -1,0 +1,204 @@
+/*estilos base son pantallas de 600px para abajo*/
+*{
+    margin: 0;
+    padding: 0;
+    /* hace que las dimensiones sean mas exactas */
+    box-sizing: border-box;
+}
+
+/* body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+/*.caja {
+    background-color: #292d33;
+    height: 100px;
+    padding: 50px;
+    width: 600px
+}*/
+
+.container{
+    width: 80%;  
+    min-height: 700px;
+    padding: 10px;
+    border: 10px solid #000;
+    position: relative;
+    /*convierte el elemento en caja flexible*/
+}
+
+/* @media screen and (max-width: 640px) {
+  .item {
+    flex-grow: 1;
+  }
+} */
+
+.containerFlex{ /*fila (horizontal)*/
+    display: flex;
+    /*direcciones: row, row-reverse, center, space-around, space-between*/
+    flex-direction: row;
+    /*justify-content: center;
+    align-items: flex-start;*/
+    justify-content: space-around;
+    /*align-times, determina como se distribuyen los elementos en el cross axis (vertical) del contenedor dentro de la fila flex-start, flex-end, center*/
+    align-items: flex-end;
+    /*cuando los elementos hijo del contenedor exceden las medidas de su padre*/
+    flex-wrap: wrap; /*cuando no quepa, crea una línea nueva y los distribuye, se distribuye en múltiple*/
+    align-content: center; /*solo funciona cuando tenemos flex-wrap activado (se mueve de forma HORIZONTAL)*/
+}
+
+/*.containerFlexBetween{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFlexStart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.containerFlexEnd{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.containerFlexEvenly{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}*/
+
+/*columna (vertical)*/
+.containerFlex-col {  
+  margin-top: 20px;
+  display: flex;
+
+  flex-direction:column; 
+  align-items: flex-start;
+  justify-content: space-around; /*(moverlos de forma VERTICAL)*/
+  max-height: 600px;
+  flex-wrap: wrap;
+}
+
+.containerFlex-row{
+  align-items: center;
+}
+/*.container-row{
+      /*mover los elementos de forma horizontal
+     felx-start|flex-end|center|space-around
+}*/
+
+.containerFlex-row {
+    align-items: flex-start;
+}
+
+/*FLEX-ROW en Item: cambiar orden de elementos*/
+/*.containerFlex-row .item-1{
+    order: 3;
+}*/
+
+/*.containerFlex-row {
+  align-items: flex-start;
+}*/
+
+/*FLEX-GROW*/
+.containerFlex-row .item-1 {
+    flex-grow: 2; /*entre mayor sea el número, más crece, que tan prioritario va a crecer
+    align-self:flex-end;*/
+}
+
+.containerFlex-row .item2 {
+  flex-grow:6;
+  align-self:center;
+}
+
+.containerFlex-row .item-3 {
+    flex-grow: 2;
+    align-self: flex-end;
+}
+
+.cajaRoja{
+    width: 150px;
+    height: 150px;
+    background-color: #fb7185;
+    padding: 1em;
+    font-weight: 900;
+    color: #f1f5f9;
+    text-align: center;
+    border: 10px solid #e11d48;
+    border-radius: 10px;
+    /*border-radius: 50%; onvierte una caja cuandrada en circulo */
+    margin: 10px 0;
+}
+
+/*.imagenArticle {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+  }*/
+
+  /* ejes de colores para ejemplo */
+.axis {
+    position: absolute;
+    z-index: 20;
+}
+
+.main-axis {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 100%;
+  background-color: red;
+}
+
+.cross-axis {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: blue;
+}
+
+.axis::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2em;
+}
+.main-axis::after {
+  position: absolute;
+  content: "Main Axis";
+  color: red;
+}
+
+.main-axis-col::after{
+  position: absolute;
+  content: "Cross Axis";
+  color: blue; 
+}
+
+.cross-axis::after {
+  white-space: nowrap;
+  content: "Cross Axis";
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: blue;
+}
+
+.cross-axis-col::after {
+  white-space: nowrap;
+  content: "Main Axis";
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: red;
+}
