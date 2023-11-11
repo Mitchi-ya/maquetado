@@ -1,0 +1,130 @@
+//Primero se definen las variables, después los estilos (después las utilizamos)
+//delcaración de variables
+$colorFondoLista: red;
+$colorBordeCajas: black;
+$colorFondoCajas: rgb(229, 54, 84);
+$colorFondoNavBar: #797979;
+$bordeGrueso: 10px solid $colorBordeCajas;
+$bordeLigero: 1px dashed $colorBordeCajas;
+$paddingNavbar: 8px;
+$estiloLetra: rgb(82, 82, 140);
+
+/*MIXES: son propiedades repetitivas, se pueden hacer bloques de estilos reutilizables y mandarlos a llamar*/
+//crear mixins reusables, siempre llevan @
+@mixin cajaFlexCentradaSpaceBetween{ /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//declaración de selector
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $colorFondoLista;
+}
+
+/*.container{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.lista{
+    background-color: $colorFondoLista;
+  border: $bordeLigero;
+}*/
+
+.navbar{ /*se repite la propiedad de display, align-items y justify-content = serían mixes*/
+  //display: flex; 
+  //justify-content: space-between;
+  //background-color: $colorFondoNavBar;
+  @include cajaFlexCentradaSpaceBetween;
+  background-color: #797979;
+  padding: $paddingNavbar;
+  width: 100%;
+  align-items: center;
+  ul{
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+  @include cajaFlexCentradaSpaceBetween;
+    list-style: none;
+    li{
+      margin: 0 8px;
+    }
+  }
+}
+
+//nesting o nesteo o agrupación
+.container {
+  /*todo lo q está dentro de container ahorra clases, ya q todo se pone dentro y a todo se le da el estilo a todas las clases.
+  Permite ser más exacto y ahorra clases.*/
+  width: 200px;
+  height: 150px;
+  border: $bordeLigero;
+  ul { /*se teiene que definir todo dentro de los corchetes*/
+    @include cajaFlexCentradaSpaceBetween;
+    background-color: $colorBordeCajas;
+    li {
+      color: white; /*para modificar un solo elemento*/
+    }
+    li:nth-child(2) {
+      color: blue;
+    }
+    li:hover{
+      font-size: 30px;
+    }
+  }
+  p{
+    text-decoration: underline;
+  }
+}
+
+.ejemplo{
+  @include cajaFlexCentradaSpaceBetween;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200%;
+  .cajas{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 20px;
+  }
+}
+
+@mixin cajaRojaFlex{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@mixin colorCaja{
+  font-size: 1.3em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  
+}
+
+.containerFlexBox{
+  @include cajaRojaFlex;
+  @include colorCaja;
+  flex-wrap: wrap;
+  .cajaRoja{
+    width: 50px;
+    height: 50px;
+    border: $bordeLigero;
+    margin: 20px;
+    background-color: $colorFondoCajas;
+  }
+  .lorem{
+    color: $estiloLetra;
+    text-decoration: none;
+  }
+
+}
+
+
+

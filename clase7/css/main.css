@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*MIXES: son propiedades repetitivas, se pueden hacer bloques de estilos reutilizables y mandarlos a llamar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: red;
+}
+
+/*.container{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.lista{
+    background-color: $colorFondoLista;
+  border: $bordeLigero;
+}*/
+.navbar { /*se repite la propiedad de display, align-items y justify-content = serían mixes*/
+  /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #797979;
+  padding: 8px;
+  width: 100%;
+  align-items: center;
+}
+.navbar ul {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+  /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul li {
+  margin: 0 8px;
+}
+
+.container {
+  /*todo lo q está dentro de container ahorra clases, ya q todo se pone dentro y a todo se le da el estilo a todas las clases.
+  Permite ser más exacto y ahorra clases.*/
+  width: 200px;
+  height: 150px;
+  border: 1px dashed black;
+}
+.container ul { /*se teiene que definir todo dentro de los corchetes*/
+  /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.container ul li {
+  color: white; /*para modificar un solo elemento*/
+}
+.container ul li:nth-child(2) {
+  color: blue;
+}
+.container ul li:hover {
+  font-size: 30px;
+}
+.container p {
+  text-decoration: underline;
+}
+
+.ejemplo {
+  /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 200%;
+}
+.ejemplo .cajas {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 20px;
+}
+
+.containerFlexBox {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex-wrap: wrap;
+}
+.containerFlexBox .cajaRoja {
+  width: 50px;
+  height: 50px;
+  border: 1px dashed black;
+  margin: 20px;
+  background-color: rgb(229, 54, 84);
+}
+.containerFlexBox .lorem {
+  color: rgb(82, 82, 140);
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

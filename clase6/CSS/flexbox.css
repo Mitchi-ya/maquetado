@@ -90,43 +90,6 @@
   flex-wrap: wrap;
 }
 
-.containerFlex-row{
-  align-items: center;
-}
-/*.container-row{
-      /*mover los elementos de forma horizontal
-     felx-start|flex-end|center|space-around
-}*/
-
-.containerFlex-row {
-    align-items: flex-start;
-}
-
-/*FLEX-ROW en Item: cambiar orden de elementos*/
-/*.containerFlex-row .item-1{
-    order: 3;
-}*/
-
-/*.containerFlex-row {
-  align-items: flex-start;
-}*/
-
-/*FLEX-GROW*/
-.containerFlex-row .item-1 {
-    flex-grow: 2; /*entre mayor sea el número, más crece, que tan prioritario va a crecer
-    align-self:flex-end;*/
-}
-
-.containerFlex-row .item2 {
-  flex-grow:6;
-  align-self:center;
-}
-
-.containerFlex-row .item-3 {
-    flex-grow: 2;
-    align-self: flex-end;
-}
-
 .cajaRoja{
     width: 150px;
     height: 150px;
@@ -201,4 +164,41 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: red;
+}
+
+/*.containerFlex-row{
+  align-items: center;
+}
+/*.container-row{
+      /*mover los elementos de forma horizontal
+     felx-start|flex-end|center|space-around
+}*/
+
+.containerFlex-row {
+    align-items: flex-start;
+}
+
+/*FLEX-ROW en Item: cambiar orden de elementos*/
+/*.containerFlex-row .item-1{
+    order: 3;
+}*/
+
+/*.containerFlex-row {
+  align-items: flex-start;
+}*/
+
+/*FLEX-GROW*/
+.containerFlex-row .item-1 {
+    flex-grow: 2; /*entre mayor sea el número, más crece, que tan prioritario va a crecer
+    align-self:flex-end;*/
+}
+
+.containerFlex-row .item2 {
+  flex-grow:6;
+  align-self:center;
+}
+
+.containerFlex-row .item-3 {
+    flex-grow: 2;
+    align-self: flex-end;
 }
