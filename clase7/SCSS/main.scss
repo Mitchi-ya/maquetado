@@ -1,3 +1,4 @@
+//primero son variables, después mixins y al último los estilos del cuerpo
 //Primero se definen las variables, después los estilos (después las utilizamos)
 //delcaración de variables
 $colorFondoLista: red;
@@ -39,26 +40,7 @@ body {
   border: $bordeLigero;
 }*/
 
-.navbar{ /*se repite la propiedad de display, align-items y justify-content = serían mixes*/
-  //display: flex; 
-  //justify-content: space-between;
-  //background-color: $colorFondoNavBar;
-  @include cajaFlexCentradaSpaceBetween;
-  background-color: #797979;
-  padding: $paddingNavbar;
-  width: 100%;
-  align-items: center;
-  ul{
-    /*display: flex;
-    align-items: center;
-    justify-content: space-between;*/
-  @include cajaFlexCentradaSpaceBetween;
-    list-style: none;
-    li{
-      margin: 0 8px;
-    }
-  }
-}
+@import "navbar";
 
 //nesting o nesteo o agrupación
 .container {
@@ -98,6 +80,7 @@ body {
   }
 }
 
+//ejercicio de la clase 7
 @mixin cajaRojaFlex{
   display: flex;
   flex-direction: row-reverse;
@@ -123,7 +106,6 @@ body {
     color: $estiloLetra;
     text-decoration: none;
   }
-
 }
 
 

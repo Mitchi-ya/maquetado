@@ -20,6 +20,9 @@ body {
     background-color: $colorFondoLista;
   border: $bordeLigero;
 }*/
+/*En main declaramos todo lo que puede ser reutilizable.
+para hacer archivos (modulos) separados es importante q al crearlo, se ponga con guión bajo(_) para que no lo compile como un archivo nuevo de css
+son fragmentos más pequeños, para que nuestro main principal, se vea más limpio */
 .navbar { /*se repite la propiedad de display, align-items y justify-content = serían mixes*/
   /*siempre acomoda los elementos al centro, siemrpe se aplican los estilos aquí establecidos*/
   display: flex;

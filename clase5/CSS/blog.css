@@ -2,17 +2,44 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.topNav {
+body{
     background-color: #292d33;
-    height: 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #292d33;
+    
     color: white;
-    padding: 10px;
+    padding: 20px 10px;
     /*position: sticky; donde quiero que se ponga*/
     position: fixed; /*si utilizamos el fijo hay que decirle como debe ponerse*/
     width: 100%;  /*para tomar el ancho de la pantalla en cualquier tamaño en la que este*/
     top: 0;
+}
+
+/*barra superior de navegación
+position: fixed, pone elemento fijo en la pantalla
+top: 0 deja el elemento pegado en el tope suprior de la pantalla
+.topNav {}*/
+
+.menuNav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuNav li{
+    list-style: none;
+}
+
+.menuNav a{
+    color: white;
+    text-decoration: none;
 }
 
 .container{
@@ -24,6 +51,20 @@
     margin: 0 auto; /*1°representa arriba-abajo; 2°representa izq y der Y es automático*/
 }
 
+.cajaFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 8px; 
+    margin: 20px 0;
+}
 /*el conteido se puede hacer de 2 formas piniendo márgenes o darle formato al texto */
 
 .mainContainer{
@@ -31,6 +72,8 @@
     padding: 10px;
     /*position: relative;
     top: 55px; o estas 2 juntas*/
+    /*medida especial(dinámica)*/
+    height: 89vh; /*es el % de la pantalla*/
 }
 
 .textoCentrado{
@@ -38,9 +81,7 @@
 }
 
 .contenedorImagen{
-    outline: solid red;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
     padding: 10px;
 }
 
@@ -48,3 +89,52 @@
     width: 100%;
 /*    margin: 0 auto;*/
 }
+
+.contenedorFechas span{
+    color: #cdc9c9;
+}
+
+.contenedorTitulo{
+    padding: 8px;
+}
+
+footer{
+    padding: 16px;
+    background-color: rgb(140, 136, 136);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    /*forma más fácil de pasarlo hasta abajo
+    position: fixed;
+    bottom: 0;
+    width: 100%;*/
+    /*medidas dinámicas: se puso en el main conteiner*/
+}
+
+/*media query o breackpoint para tablets*/
+/*tablets en vertical (portrait) y celulares más grandes, 600px en adelante*/
+@media screen and (min-width: 600px){
+    .cajaFlex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .articulo{
+        width: 40%;
+        margin: 10px 20px;
+    }
+}
+
+/*laptops/monitores pequeñas, 992px en adelante*/
+@media screen and (min-width: 992px) {
+    .articulo{
+        width: 25%;
+    }    
+}
+
+/*formas de poner footer:
+-en medidas dinámicas
+- con position, bottom y width*/
+

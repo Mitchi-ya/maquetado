@@ -1,0 +1,24 @@
+/*En main declaramos todo lo que puede ser reutilizable.
+para hacer archivos (modulos) separados es importante q al crearlo, se ponga con guión bajo(_) para que no lo compile como un archivo nuevo de css
+son fragmentos más pequeños, para que nuestro main principal, se vea más limpio */
+
+.navbar{ /*se repite la propiedad de display, align-items y justify-content = serían mixes*/
+    //display: flex; 
+    //justify-content: space-between;
+    //background-color: $colorFondoNavBar;
+    @include cajaFlexCentradaSpaceBetween;
+    background-color: #797979;
+    padding: $paddingNavbar;
+    width: 100%;
+    align-items: center;
+    ul{
+      /*display: flex;
+      align-items: center;
+      justify-content: space-between;*/
+    @include cajaFlexCentradaSpaceBetween;
+      list-style: none;
+      li{
+        margin: 0 8px;
+      }
+    }
+  }
