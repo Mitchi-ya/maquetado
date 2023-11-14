@@ -73,7 +73,7 @@ top: 0 deja el elemento pegado en el tope suprior de la pantalla
     /*position: relative;
     top: 55px; o estas 2 juntas*/
     /*medida especial(dinámica)*/
-    height: 89vh; /*es el % de la pantalla*/
+    height: 130vh; /*es el % de la pantalla del FOOTER*/
 }
 
 .textoCentrado{
@@ -120,7 +120,7 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
+    }   
     .articulo{
         width: 40%;
         margin: 10px 20px;
