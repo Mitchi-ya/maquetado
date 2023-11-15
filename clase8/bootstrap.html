@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link y script se sacan de getbootstrap.com-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!--descargar el.min ya que pesa menos y viene comprimido-->
+    <title>Bootstrap</title>
+  </head>
+
+  <body>
+    <!--estilos de texto por default-->
+    <h1>Bootstrap</h1>
+
+    <div class="container">
+      <p>contenedor .container</p>
+    </div>
+
+    <div class="contained-fluid miContainer">
+      <p>contenedor fluid .container-fluid</p>
+    </div>
+
+    <!--sistema Grid: debe haber un elemento padre, container-->
+    <h2>Grid de Bootstrap</h2>
+    <div class="contenido miGrid">
+      <div class="row miRow">
+        <!--filas de ancho automático, realizadas por bootstrap-->
+        <div class="col miCol">1 of 2</div>
+        <div class="col miCol">2 of 2</div>
+      </div>
+      <div class="row miRow">
+        <div class="col miCol">1 of 3</div>
+        <div class="col miCol">2 of 3</div>
+        <div class="col miCol">3 of 3</div>
+      </div>
+    </div>
+
+    <hr />
+    <!--columnas ancho definido-->
+    <h2>GridFijoCasillas</h2>
+    <div class="cont miGrid miGridFijo">
+      <div class="row">
+        <div class="col miCol">col1</div>
+        <div class="col miCol">col2</div>
+        <div class="col miCol">col3</div>
+        <div class="col miCol">col4</div>
+        <div class="col miCol">col5</div>
+        <div class="col miCol">col6</div>
+        <div class="col miCol">col7</div>
+        <div class="col miCol">col8</div>
+        <div class="col miCol">col9</div>
+        <div class="col miCol">col10</div>
+        <div class="col miCol">col11</div>
+        <div class="col miCol">col12</div>
+      </div>
+    </div>
+
+    <!--columnas ancho definido sin responsividad-->
+    <div class="row" style="padding: 10px 0">
+      <div class="col col-2 miCol2">
+        col 2 casillas
+        <!--<button type="button" class="btn btn-primary mibtn">primary</button>-->
+      </div>
+      <div class="col col-8 miCol2">col 8 casillas</div>
+      <div class="col col-2 miCol2">col 2 casillas</div>
+    </div>
+
+    <!--columnas responsivas-->
+    <!--al usar ANCHO FIJO en las columnas, SOLO tenemos 12 casillas disponibles. Si nos pasamos de las 12 el contenido se pasa a una fila nueva.
+      mide por el tamaño de pantalla; sm -pequeño; md-mediano; gr-grande; xg-extragrande
+    se puede tener varios contenedores dentro de los div-->
+    <div class="row" style="padding: 10px 0">
+      <div class="col-2 col-md-3 col-lg-4 miCol2 bg-danger">col 2 casillas</div>
+      <div class="col-8 col-md-4 col-lg-4 miCol2">col 8 casillas</div>
+      <div class="col-2 col-md-2 col-lg-4 miCol2">col 2 casillas</div>
+    </div>
+
+    <hr />
+
+    <!--ejercicio-->
+    <div class="row" style="padding: 10px 0">
+      <h2 class="header">Header</h2>
+      <div class="col-md-5 col-lg-7 mi-Col1">
+        <h3>Articulo</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error
+        eveniet maxime asperiores, quae nostrum impedit explicabo dicta ratione
+        exercitationem laborum cumque dignissimos mollitia in nulla? Culpa
+        impedit facere harum! Accusantium similique ut dolorum? Distinctio
+        voluptatibus fuga voluptates veritatis aliquid laborum sapiente quia
+        beatae porro eos sed quisquam adipisci vel soluta magnam nihil, velit
+        provident eaque saepe voluptas officiis aperiam.
+      </div>
+
+      <div class="col-md-3 col-lg-4 mi-Col2 bg-danger">
+        <h3>Sidebar - Aside</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, amet
+        maiores, iusto cumque at aspernatur provident, ipsam modi hic culpa
+        illum voluptatem minus consectetur! Nemo quaerat tempora quae sequi
+        fugit?
+      </div>
+
+      <div class="col-md-2 col-lg-3 mi-Col2">
+        <h3>Columna</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, amet
+        maiores, iusto cumque at aspernatur provident, ipsam modi hic culpa
+        illum voluptatem minus consectetur! Nemo quaerat tempora quae sequi
+        fugit?
+      </div>
+
+      <div class="col-md-2 col-lg-3 mi-Col1">
+        <h3>Columna</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, amet
+        maiores, iusto cumque at aspernatur provident, ipsam modi hic culpa
+        illum voluptatem minus consectetur! Nemo quaerat tempora quae sequi
+        fugit?
+      </div>
+
+      <div class="col-md-2 col-lg-3 mi-Col2">
+        <h3>Columna</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, amet
+        maiores, iusto cumque at aspernatur provident, ipsam modi hic culpa
+        illum voluptatem minus consectetur! Nemo quaerat tempora quae sequi
+        fugit?
+      </div>
+
+      <div class="col-md-2 col-lg-3 mi-Col1">
+        <h3>Columna</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, amet
+        maiores, iusto cumque at aspernatur provident, ipsam modi hic culpa
+        illum voluptatem minus consectetur! Nemo quaerat tempora quae sequi
+        fugit?
+      </div>
+      <footer>footer</footer>
+    </div>
+
+    <!--script: va al finalizar body-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

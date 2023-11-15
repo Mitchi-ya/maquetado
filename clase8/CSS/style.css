@@ -1,0 +1,55 @@
+/*practica de clase*/
+.contenido {
+  outline: solid red;
+  border: 5px;
+}
+
+.miGrid {
+  background-color: rgb(18, 18, 72);
+  border: 1px solid;
+  color: whitesmoke;
+}
+
+.miGrid .col {
+  border: 1.5px solid blueviolet;
+  padding: 10px;
+  text-align: center;
+}
+
+.miRow {
+  border: 10px solid;
+}
+
+/*clase*/
+
+.miGridFijo {
+  margin-top: 40px;
+}
+
+.miCol2 {
+  border: 1px solid red;
+}
+
+.mi-Col1 {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.mi-Col2 {
+  color: white;
+  background-color: rgb(49, 49, 74);
+}
+
+.header footer {
+  padding: 10px;
+  text-size-adjust: 10%;
+}
+.header {
+  color: white;
+  background-color: rgb(179, 179, 232);
+  margin: 15px;
+}
+
+footer {
+  background-color: rgb(179, 179, 232);
+}
